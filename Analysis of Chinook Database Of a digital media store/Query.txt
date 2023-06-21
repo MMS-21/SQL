@@ -1,0 +1,38 @@
+-- FINDING THE MOST ORDERED GENRE PER COUNTRY 
+SELECT  inv.BillingCountry, gen.Name, SUM(inv.total)
+FROM Invoice inv
+JOIN InvoiceLine IL ON  inv.InvoiceId = IL.InvoiceId
+JOIN Track ON IL.TrackId = Track.TrackId
+JOIN Genre gen ON Track.GenreId = gen.GenreId
+GROUP BY  1,2
+ORDER BY 3 DESC
+
+-- Finding the most Buying City in The USA
+SELECT inv.BillingState,inv.BillingCity,
+	SUM(CASE WHEN inv.BillingCountry = 'USA' THEN IL.UnitPrice*IL.Quantity END) AS "City Bill"
+FROM Invoice AS inv
+JOIN InvoiceLine AS IL ON inv.InvoiceId = IL.InvoiceId
+WHERE inv.BillingCountry IN ('USA')
+GROUP BY 1,2
+ORDER BY 3 DESC
+
+--Top Five Artists With Their Top Tracks in 2013
+SELECT CAST(strftime('%Y', inv."InvoiceDate")AS A) AS "Year",Track.Name, Artist.Name,(COUNT(Artist.name)) AS "Top Artist"
+FROM Track
+JOIN InvoiceLine IL ON IL.TrackId  = Track.TrackId 
+JOIN Invoice AS inv ON inv.InvoiceId = IL.InvoiceId
+JOIN Genre gen ON Track.GenreId = gen.GenreId
+JOIN Album ON Track.AlbumId = Album.AlbumId
+JOIN Artist ON Album.ArtistId = Artist.ArtistId
+where inv.invoicedate between '2013-01-01' and '2013-12-31'
+GROUP BY 1,3
+ORDER BY 4 DESC
+LIMIT 5;
+
+--Most Employees Helped With The Sales
+SELECT * FROM
+(SELECT emp.EmployeeId,emp.FirstName||' '||emp.LastName AS "Employee Name" , SUM(total) AS 'Total'
+FROM employee AS emp
+	INNER JOIN customer AS c ON emp.employeeid = c.supportrepid
+	INNER JOIN invoice AS inv ON inv.customerid = c.customerid
+GROUP BY emp.employeeid)
