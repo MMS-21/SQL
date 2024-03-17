@@ -4,7 +4,7 @@ Welcome to the SQL Projects Repository! This repository contains a collection of
 
 ## Projects
 
-### [Project 1: Chinook Database Of a digital media store]([project1/](https://github.com/MMS-21/SQL/tree/9cc51c6e8ae0d2b4d2a2305075617b15a85a9ea4/Analysis%20of%20Chinook%20Database%20Of%20a%20digital%20media%20store))
+### [Project 1: Chinook Database Of a digital media store]([project1/][(https://github.com/MMS-21/SQL/tree/9cc51c6e8ae0d2b4d2a2305075617b15a85a9ea4/Analysis%20of%20Chinook%20Database%20Of%20a%20digital%20media%20store)](https://github.com/MMS-21/SQL/tree/f3922eb8e3afdf9f732e49c62f5ba4bfc71fa665/Analysis%20of%20Chinook%20Database%20Of%20a%20digital%20media%20store))
 
 Description: This project involves analyzing sales data from a music store database to gain insights into customer purchasing behaviour, popular genres, top-selling tracks, and employee performance. The analysis focuses on several key aspects of the sales data, including:
 
