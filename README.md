@@ -15,7 +15,9 @@ Features:
 
 ### [Project 2: COVID]([project2/](https://github.com/MMS-21/SQL/blob/9cc51c6e8ae0d2b4d2a2305075617b15a85a9ea4/COVID%20Portfolio%20Project.sql))
 
-Description: Brief description of the project.
+Description: The project aims to analyze COVID-19 data to gain insights into infection and vaccination rates globally, by continent, and by country. It examines various aspects of the data, including total cases, total deaths, infection percentages, vaccination progress, and population demographics.
+
+.
 
 Features:
 - **Global Numbers**: Provides global totals for COVID-19 cases, deaths, and death percentage.
