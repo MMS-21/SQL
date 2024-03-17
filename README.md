@@ -17,8 +17,6 @@ Features:
 
 Description: The project aims to analyze COVID-19 data to gain insights into infection and vaccination rates globally, by continent, and by country. It examines various aspects of the data, including total cases, total deaths, infection percentages, vaccination progress, and population demographics.
 
-.
-
 Features:
 - **Global Numbers**: Provides global totals for COVID-19 cases, deaths, and death percentage.
 - **Total Population vs Vaccination**: Compares total population with vaccination progress to track the percentage of the population vaccinated
