@@ -31,11 +31,6 @@ Features:
 - **Breaking out Owner's Address into Individual Columns (Address, City, State):** Splits the OwnerAddress column into separate columns for OwnerSplitAddress, OwnerSplitCity, and OwnerSplitState.
 - **Remove Duplicates:** Identifies and removes duplicate records based on certain criteria, such as ParcelID, PropertyAddress, SalePrice, SaleDate, and LegalReference.
 
-## How to Use
-
-1. Clone this repository to your local machine.
-2. Navigate to the project directory you are interested in.
-3. Follow the instructions provided in the project README to set up and run the project.
 
 ## Contributing
 
